@@ -6,7 +6,7 @@ To start you need to download the ChirpStack OS image from <https://artifacts.ch
 
 After downloading the ChirpStack OS image you need to use software such as Balena Etcher to flash a micro-SD card. Once the flashing is done you can insert the micro-SD card into the Rak7246 gateway and then power it up. Inserting the micro-SD card can be difficult. The writing on the micro-SD card should be facing up and the card should be inserted horizontally at the top of the slot in the plastic case. If the card falls into the case you will need to unscrew and remove the case to access the card.
 
-When the Rak7246 gateway is powered up after a minute or so you should see a WiFi access point named “ChirpStackAP” on your WiFi-enabled computer. Connect to that WiFi access point and then use ssh to log into the Rak7246 gateway. The IP address is 192.168.0.1 and the user name and password are both admin. This ssh command should work in a terminal: ssh admin@192.168.0.1 . Use admin for the password and then you should be logged into the Rak7246 gateway.
+When the Rak7246 gateway is powered up after a minute or so you should see a WiFi access point named “ChirpStackAP” on your WiFi-enabled computer. Connect to that WiFi access point and then use ssh to log into the Rak7246 gateway. The password for the Wifi access point is "ChirpStackAP". The IP address is 192.168.0.1 and the user name and password are both admin. This ssh command should work in a terminal: ssh admin@192.168.0.1 . Use admin for the password and then you should be logged into the Rak7246 gateway.
 
 Once you are connected to the gateway you need to edit two files:
 1.  sudo nano /etc/chirpstack-application-server/chirpstack-application-server.toml
